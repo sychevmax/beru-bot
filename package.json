@@ -1,0 +1,20 @@
+{
+  "name": "beru-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run": "npm index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sychevmax/beru-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sychevmax/beru-bot/issues"
+  },
+  "homepage": "https://github.com/sychevmax/beru-bot#readme"
+}
