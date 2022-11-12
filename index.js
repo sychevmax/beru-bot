@@ -13,9 +13,4 @@ bot.on("message", (ctx) => {
   ctx.reply("Ок");
 });
 
-(async () => {
-  // Start the app
-  await bot.launch();
-
-  console.log('⚡️ Bolt app is running!');
-})();
+bot.launch();
