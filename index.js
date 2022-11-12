@@ -1,7 +1,5 @@
 const { Telegraf } = require('telegraf');
 const dotenv = require('dotenv');
-const express = require('express');
-const packageInfo = require('package.json');
 
 dotenv.config();
 
@@ -13,19 +11,11 @@ bot.start((ctx) => {
 
 bot.on("message", (ctx) => {
   ctx.reply("Ок");
-})
-
-bot.launch();
-
-var app = express();
-
-app.get('/', function(req, res) {
-    res.json({ version: packageInfo.version });
 });
 
-var server = app.listen(process.env.PORT, function() {
-    var host = server.address().address;
-    var port = server.address().port;
+(async () => {
+  // Start the app
+  await bot.launch();
 
-    console.log('Web server started at http://%s:%s', host, port);
-});
+  console.log('⚡️ Bolt app is running!');
+})();
