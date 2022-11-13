@@ -10,7 +10,7 @@ bot.start((ctx) => {
 });
 
 bot.on("message", (ctx) => {
-  ctx.reply("Ок");
+  ctx.reply(ctx.message.text + "- Ок");
 });
 
 bot.launch();
