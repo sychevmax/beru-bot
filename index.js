@@ -1,5 +1,6 @@
 const { Telegraf } = require('telegraf');
 const dotenv = require('dotenv');
+const express = require('express')
 
 dotenv.config();
 
@@ -14,3 +15,9 @@ bot.on("message", (ctx) => {
 });
 
 bot.launch();
+
+const app = express()
+app.all('/', (req, res) => {    
+    res.send('Success')
+})
+app.listen(process.env.PORT || 3000)
